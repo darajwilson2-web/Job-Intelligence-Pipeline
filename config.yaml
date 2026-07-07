@@ -1,0 +1,213 @@
+# ============================================================
+# Job Search Configuration — edit this file to customize your search.
+# You never need to touch any Python files.
+# ============================================================
+
+# ------------------------------------
+# YOUR LOCATION
+# ------------------------------------
+your_city: "Charlotte, NC"
+max_office_miles: 20          # Max commute for in-office roles
+include_remote: true
+include_contract: true
+
+# ------------------------------------
+# TARGET ROLES (title must contain one of these — case insensitive)
+# ------------------------------------
+title_filters:
+  # Primary: Compliance / Risk / Fraud
+  - "fraud analyst"
+  - "fraud detection"
+  - "compliance analyst"
+  - "risk analyst"
+  - "revenue integrity"
+  - "audit analyst"
+  - "risk and compliance"
+  # Secondary: Executive Assistant / Business Partner
+  - "executive assistant"
+  - "executive business partner"
+  - "chief of staff"
+  - "associate chief of staff"
+  - "administrative assistant"
+  - "executive support"
+  # Data / Analytics
+  - "data analyst"
+  - "business analyst"
+  - "reporting analyst"
+  - "analytics"
+  - "operations analyst"
+  - "business operations analyst"
+  - "sales operations"
+  # Project / Program Coordinator
+  - "project coordinator"
+  - "program coordinator"
+  - "operations coordinator"
+  - "project management analyst"
+
+# ------------------------------------
+# KEYWORD SCORING WEIGHTS
+# Higher = more important to you
+# ------------------------------------
+keywords:
+  # Fraud / Compliance / Risk — PRIMARY PATH
+  fraud analyst: 4
+  fraud detection: 4
+  fraud investigation: 4
+  fraud prevention: 4
+  risk analyst: 4
+  compliance analyst: 4
+  revenue integrity: 4
+  anomaly detection: 3
+  loss prevention: 3
+  risk assessment: 3
+  risk management: 3
+  case management: 3
+  eligibility: 3
+  hipaa: 3
+  sox: 2
+  aml: 2
+  kyc: 2
+  audit: 2
+  compliance: 2
+  reconciliation: 2
+  investigation: 2
+  regulatory: 2
+  internal controls: 2
+  data privacy: 2
+
+  # Executive Assistant — SECONDARY PATH
+  executive assistant: 3
+  executive business partner: 3
+  chief of staff: 3
+  executive support: 2
+  calendar management: 2
+  c-suite: 2
+  asynchronous: 2
+  async: 2
+  distributed team: 2
+  ai-first: 2
+  remote-first: 2
+  handbook-first: 2
+
+  # Data / Analytics Tools
+  sql: 3
+  python: 3
+  power bi: 3
+  excel: 2
+  data analysis: 3
+  data visualization: 2
+  dashboard: 2
+  data analyst: 3
+  business analyst: 2
+  operations analyst: 3
+  tableau: 2
+  jira: 1
+  etl: 1
+  data integrity: 2
+  kpi: 1
+  reporting: 1
+  forecasting: 1
+
+  # Project / Coordinator
+  project coordinator: 3
+  program coordinator: 3
+  project management: 2
+  deliverables: 1
+  milestones: 1
+  coordination: 1
+  workflow: 1
+  stakeholder: 1
+  cross-functional: 1
+  process improvement: 1
+
+  # Sector boosters
+  government: 3
+  public sector: 3
+  county: 3
+  medicaid: 3
+  federal: 2
+  medicare: 2
+  healthcare: 2
+  health system: 2
+  health insurance: 2
+  claims: 3
+  hipaa compliance: 3
+  banking: 2
+  financial services: 2
+  fintech: 2
+  fraud: 3
+  insurance: 2
+
+# ------------------------------------
+# MINIMUM SCORE TO SHOW IN RESULTS
+# Raise to see fewer (more relevant) results
+# Lower to see more results
+# ------------------------------------
+min_score: 3
+
+# ------------------------------------
+# GREENHOUSE COMPANY BOARDS
+# Token = slug after boards.greenhouse.io/TOKEN
+# ------------------------------------
+greenhouse_companies:
+  - stripe
+  - affirm
+  - robinhood
+  - coinbase
+  - airbnb
+  - instacart
+  - asana
+  - gitlab
+  - elastic
+  - okta
+  - cloudflare
+  - datadog
+  - hubspot
+  - hims
+  - ro_health
+  # Add your own:
+  # - your-target-company
+
+# ------------------------------------
+# LEVER COMPANY BOARDS
+# Token = slug after jobs.lever.co/TOKEN
+# ------------------------------------
+lever_companies:
+  - netflix
+  - palantir
+  - carta
+  - checkr
+  - samsara
+  - gusto
+  - benchling
+  # Add your own:
+  # - your-target-company
+
+# ------------------------------------
+# ASHBY COMPANY BOARDS
+# Token = slug after jobs.ashbyhq.com/TOKEN
+# ------------------------------------
+ashby_companies:
+  - openai
+  - perplexity
+  - anduril
+  - ramp
+  - brex
+  - deel
+  # Add your own:
+  # - your-target-company
+
+# ------------------------------------
+# WORKDAY COMPANIES
+# Format: [Company Name, subdomain, careers-path]
+# ------------------------------------
+workday_companies:
+  - ["Atrium Health",   "atriumhealth", "Careers"]
+  - ["Novant Health",   "novanthealth",       "Careers"]
+  - ["Humana",          "humana",       "Careers"]
+  - ["Aetna",           "cvshealth",        "Careers"]
+  - ["Wells Fargo",     "wellsfargo",   "Careers"]
+  - ["Bank of America", "bankofamerica","Careers"]
+  - ["Truist",          "truist",       "Careers"]
+  # Add your own:
+  # - ["Company Name", "subdomain", "Careers"]

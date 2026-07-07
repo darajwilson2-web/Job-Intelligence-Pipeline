@@ -1,0 +1,343 @@
+12:19:27  INFO      ============================================================
+12:19:27  INFO      Job Intelligence Platform � starting run
+12:19:27  INFO      ============================================================
+12:19:27  INFO      Fetching from 38 sources concurrently...
+12:19:28  INFO        Greenhouse:affirm: 177 postings
+12:19:28  INFO        Greenhouse:robinhood: 128 postings
+12:19:28  INFO        Greenhouse:asana: 150 postings
+12:19:28  INFO        Greenhouse:airbnb: 214 postings
+12:19:28  INFO        Greenhouse:coinbase: 132 postings
+12:19:29  INFO        Greenhouse:instacart: 155 postings
+12:19:29  INFO        Greenhouse:stripe: 493 postings
+12:19:29  INFO        RemoteOK: 100 postings
+12:19:29  INFO        Greenhouse:gitlab: 145 postings
+12:19:29  INFO        Greenhouse:elastic: 187 postings
+12:19:30  WARNING   [Greenhouse:hims] Not found � check token
+12:19:30  INFO        Greenhouse:cloudflare: 240 postings
+12:19:30  INFO        Greenhouse:okta: 357 postings
+12:19:30  INFO        Greenhouse:datadog: 419 postings
+12:19:30  WARNING   [Greenhouse:ro] Not found � check token
+12:19:31  WARNING   [Lever:carta] Not found � check token
+12:19:31  WARNING   [Lever:checkr] Not found � check token
+12:19:31  WARNING   [Lever:gusto] Not found � check token
+12:19:31  WARNING   [Lever:samsara] Not found � check token
+12:19:31  INFO        Lever:palantir: 275 postings
+12:19:31  INFO        Ashby:perplexity: 78 postings
+12:19:31  WARNING   [Lever:benchling] Not found � check token
+12:19:31  INFO        Ashby:openai: 711 postings
+12:19:31  WARNING   [Ashby:anduril] Not found � check token
+12:19:32  WARNING   [Ashby:brex] Not found � check token
+12:19:32  INFO        Ashby:ramp: 123 postings
+12:19:33  INFO      [Workday:Truist] Found 1 postings (wd1)
+12:19:33  INFO        Workday:Truist: 1 postings
+12:19:34  INFO        Remotive: 28 postings
+12:19:35  WARNING   [Workday:Novant Health] No active board found (tried wd1�wd12)
+12:19:36  WARNING   [Workday:Humana] No active board found (tried wd1�wd12)
+12:19:36  WARNING   [Workday:Aetna] No active board found (tried wd1�wd12)
+12:19:36  WARNING   [Workday:Atrium Health] No active board found (tried wd1�wd12)
+12:19:36  WARNING   [Workday:Wells Fargo] No active board found (tried wd1�wd12)
+12:19:36  WARNING   [Workday:Bank of America] No active board found (tried wd1�wd12)
+12:19:43  INFO      Total raw postings fetched: 4113
+12:19:43  INFO      After filtering and scoring: 89 qualifying jobs
+12:19:43  INFO      Upserted 89 jobs into database
+12:19:43  INFO      CSV saved: output/jobs_2026-07-07.csv  (89 jobs)
+12:19:44  INFO      Excel saved: output/jobs_2026-07-07.xlsx  (89 jobs)
+12:19:44  INFO      
+============================================================
+12:19:44  INFO      Run complete � 89 jobs exported
+12:19:44  INFO        New today:    89
+12:19:44  INFO        Total in DB:  89
+12:19:44  INFO      
+By role type:
+12:19:44  INFO        Data / Analytics: 56
+12:19:44  INFO        Operations Analytics: 15
+12:19:44  INFO        EA / Business Partner: 11
+12:19:44  INFO        Compliance / Risk / Fraud: 7
+12:19:44  INFO      
+By work type:
+12:19:44  INFO        Remote: 45
+12:19:44  INFO        In-Office / Hybrid: 32
+12:19:44  INFO        Contract: 12
+12:19:44  INFO      
+By sector:
+12:19:44  INFO        Compliance / Risk / Fraud: 58
+12:19:44  INFO        General: 16
+12:19:44  INFO        Banking: 6
+12:19:44  INFO        Government: 6
+12:19:44  INFO        Healthcare: 3
+12:19:44  INFO      
+Files saved:
+12:19:44  INFO        output/jobs_2026-07-07.csv
+12:19:44  INFO        output/jobs_2026-07-07.xlsx
+12:19:44  INFO        output/jobs.db  (full history + tracker)
+12:19:44  INFO      
+Tip: Run  python main.py --top  to see your best unreviewed matches
+12:24:37  INFO      ============================================================
+12:24:37  INFO      Job Intelligence Platform — starting run
+12:24:37  INFO      ============================================================
+12:24:37  INFO      Fetching from 38 sources concurrently...
+12:24:38  INFO        Greenhouse:airbnb: 214 postings
+12:24:38  INFO        Greenhouse:affirm: 177 postings
+12:24:38  INFO        Greenhouse:asana: 150 postings
+12:24:38  INFO        Greenhouse:coinbase: 132 postings
+12:24:38  INFO        Greenhouse:instacart: 155 postings
+12:24:38  INFO        Greenhouse:robinhood: 127 postings
+12:24:38  INFO        Greenhouse:stripe: 493 postings
+12:24:38  INFO        Greenhouse:gitlab: 145 postings
+12:24:38  INFO        RemoteOK: 100 postings
+12:24:39  INFO        Greenhouse:elastic: 187 postings
+12:24:39  INFO        Greenhouse:okta: 356 postings
+12:24:39  INFO        Greenhouse:cloudflare: 240 postings
+12:24:39  WARNING   [Greenhouse:ro] Not found — check token
+12:24:39  WARNING   [Greenhouse:hims] Not found — check token
+12:24:39  INFO        Greenhouse:datadog: 419 postings
+12:24:40  WARNING   [Lever:carta] Not found — check token
+12:24:40  WARNING   [Lever:checkr] Not found — check token
+12:24:40  WARNING   [Lever:benchling] Not found — check token
+12:24:40  WARNING   [Ashby:anduril] Not found — check token
+12:24:40  INFO        Ashby:perplexity: 78 postings
+12:24:40  WARNING   [Lever:samsara] Not found — check token
+12:24:40  WARNING   [Lever:gusto] Not found — check token
+12:24:41  INFO        Ashby:openai: 711 postings
+12:24:41  INFO        Ashby:ramp: 123 postings
+12:24:41  WARNING   [Ashby:brex] Not found — check token
+12:24:41  INFO        Lever:palantir: 275 postings
+12:24:43  INFO      [Workday:Truist] Found 1 postings (wd1)
+12:24:43  INFO        Workday:Truist: 1 postings
+12:24:44  INFO        Remotive: 28 postings
+12:24:45  WARNING   [Workday:Novant Health] No active board found (tried wd1–wd12)
+12:24:45  WARNING   [Workday:Wells Fargo] No active board found (tried wd1–wd12)
+12:24:45  WARNING   [Workday:Atrium Health] No active board found (tried wd1–wd12)
+12:24:45  WARNING   [Workday:Humana] No active board found (tried wd1–wd12)
+12:24:45  WARNING   [Workday:Bank of America] No active board found (tried wd1–wd12)
+12:24:47  WARNING   [Workday:Aetna] No active board found (tried wd1–wd12)
+12:24:47  INFO      Total raw postings fetched: 4111
+12:24:47  INFO      After filtering and scoring: 89 qualifying jobs
+12:24:47  INFO      filter_new: 89 total → 0 new
+12:24:47  INFO      Upserted 89 jobs into database
+12:24:47  INFO      CSV saved: output/jobs_2026-07-07.csv  (89 jobs)
+12:24:47  INFO      Excel saved: output/jobs_2026-07-07.xlsx  (89 jobs)
+12:24:47  INFO      
+============================================================
+12:24:47  INFO      Run complete — 89 jobs exported
+12:24:47  INFO        New today:    0
+12:24:47  INFO        Total in DB:  89
+12:24:47  INFO      
+By role type:
+12:24:47  INFO        Data / Analytics: 56
+12:24:47  INFO        Operations Analytics: 15
+12:24:47  INFO        EA / Business Partner: 11
+12:24:47  INFO        Compliance / Risk / Fraud: 7
+12:24:47  INFO      
+By work type:
+12:24:47  INFO        Remote: 45
+12:24:47  INFO        In-Office / Hybrid: 32
+12:24:47  INFO        Contract: 12
+12:24:47  INFO      
+By sector:
+12:24:47  INFO        Compliance / Risk / Fraud: 58
+12:24:47  INFO        General: 16
+12:24:47  INFO        Banking: 6
+12:24:47  INFO        Government: 6
+12:24:47  INFO        Healthcare: 3
+12:24:47  INFO      
+Files saved:
+12:24:47  INFO        output/jobs_2026-07-07.csv
+12:24:47  INFO        output/jobs_2026-07-07.xlsx
+12:24:47  INFO        output/jobs.db  (full history + tracker)
+12:24:47  INFO      
+Tip: Run  python main.py --top  to see your best unreviewed matches
+12:40:01  INFO      ============================================================
+12:40:01  INFO      Job Intelligence Platform — starting run
+12:40:01  INFO      ============================================================
+12:40:01  INFO      Fetching from 38 sources concurrently...
+12:40:02  INFO        Greenhouse:asana: 150 postings
+12:40:02  INFO        Greenhouse:robinhood: 127 postings
+12:40:02  INFO        Greenhouse:coinbase: 132 postings
+12:40:02  INFO        Greenhouse:affirm: 177 postings
+12:40:02  INFO        Greenhouse:instacart: 155 postings
+12:40:03  INFO        Greenhouse:stripe: 493 postings
+12:40:03  INFO        Greenhouse:airbnb: 214 postings
+12:40:03  INFO        RemoteOK: 100 postings
+12:40:03  INFO        Greenhouse:gitlab: 145 postings
+12:40:03  INFO        Greenhouse:elastic: 187 postings
+12:40:03  INFO        Greenhouse:okta: 355 postings
+12:40:04  WARNING   [Greenhouse:ro_health] Not found — check token
+12:40:04  WARNING   [Greenhouse:hims] Not found — check token
+12:40:04  INFO        Greenhouse:cloudflare: 241 postings
+12:40:04  INFO        Greenhouse:datadog: 419 postings
+12:40:05  WARNING   [Lever:carta] Not found — check token
+12:40:05  WARNING   [Lever:checkr] Not found — check token
+12:40:05  INFO        Ashby:perplexity: 78 postings
+12:40:05  INFO        Lever:palantir: 275 postings
+12:40:05  WARNING   [Lever:samsara] Not found — check token
+12:40:05  WARNING   [Lever:gusto] Not found — check token
+12:40:05  WARNING   [Ashby:anduril] Not found — check token
+12:40:05  WARNING   [Lever:benchling] Not found — check token
+12:40:05  INFO        Ashby:openai: 711 postings
+12:40:06  INFO        Ashby:ramp: 123 postings
+12:40:06  WARNING   [Ashby:brex] Not found — check token
+12:40:08  INFO      [Workday:Truist] Found 1 postings (wd1)
+12:40:08  INFO        Workday:Truist: 1 postings
+12:40:08  INFO        Remotive: 28 postings
+12:40:10  WARNING   [Workday:Atrium Health] No active board found (tried wd1–wd12)
+12:40:10  WARNING   [Workday:Wells Fargo] No active board found (tried wd1–wd12)
+12:40:10  WARNING   [Workday:Humana] No active board found (tried wd1–wd12)
+12:40:10  WARNING   [Workday:Novant Health] No active board found (tried wd1–wd12)
+12:40:10  WARNING   [Workday:Bank of America] No active board found (tried wd1–wd12)
+12:40:10  WARNING   [Workday:Aetna] No active board found (tried wd1–wd12)
+12:40:10  INFO      Total raw postings fetched: 4111
+12:40:10  INFO      After filtering and scoring: 90 qualifying jobs
+12:40:10  INFO      filter_new: 90 total → 1 new
+12:40:10  INFO      Upserted 90 jobs into database
+12:40:10  INFO      CSV saved: output/jobs_2026-07-07.csv  (90 jobs)
+13:02:37  INFO      ============================================================
+13:02:37  INFO      Job Intelligence Platform — starting run
+13:02:37  INFO      ============================================================
+13:02:37  INFO      Fetching from 38 sources concurrently...
+13:02:38  INFO        Greenhouse:coinbase: 132 postings
+13:02:38  INFO        Greenhouse:robinhood: 126 postings
+13:02:38  INFO        Greenhouse:asana: 150 postings
+13:02:38  INFO        Greenhouse:affirm: 177 postings
+13:02:38  INFO        Greenhouse:airbnb: 214 postings
+13:02:38  INFO        Greenhouse:stripe: 493 postings
+13:02:38  INFO        Greenhouse:gitlab: 145 postings
+13:02:39  INFO        RemoteOK: 100 postings
+13:02:39  INFO        Greenhouse:elastic: 186 postings
+13:02:39  INFO        Greenhouse:okta: 355 postings
+13:02:39  WARNING   [Greenhouse:hims] Not found — check token
+13:02:39  INFO        Greenhouse:cloudflare: 241 postings
+13:02:39  WARNING   [Greenhouse:ro_health] Not found — check token
+13:02:39  INFO        Greenhouse:datadog: 420 postings
+13:02:40  WARNING   [Lever:gusto] Not found — check token
+13:02:40  WARNING   [Lever:benchling] Not found — check token
+13:02:40  WARNING   [Lever:samsara] Not found — check token
+13:02:40  INFO        Greenhouse:instacart: 155 postings
+13:02:41  WARNING   [Lever:carta] Not found — check token
+13:02:41  WARNING   [Lever:checkr] Not found — check token
+13:02:41  INFO        Ashby:openai: 712 postings
+13:02:41  INFO        Lever:palantir: 275 postings
+13:02:41  INFO        Ashby:perplexity: 78 postings
+13:02:41  WARNING   [Ashby:anduril] Not found — check token
+13:02:41  WARNING   [Ashby:brex] Not found — check token
+13:02:41  INFO        Ashby:ramp: 123 postings
+13:02:43  INFO      [Workday:Truist] Found 1 postings (wd1)
+13:02:43  INFO        Workday:Truist: 1 postings
+13:02:44  INFO        Remotive: 28 postings
+13:02:46  WARNING   [Workday:Novant Health] No active board found (tried wd1–wd12)
+13:02:46  WARNING   [Workday:Humana] No active board found (tried wd1–wd12)
+13:02:46  WARNING   [Workday:Atrium Health] No active board found (tried wd1–wd12)
+13:02:46  WARNING   [Workday:Aetna] No active board found (tried wd1–wd12)
+13:02:46  WARNING   [Workday:Bank of America] No active board found (tried wd1–wd12)
+13:02:46  WARNING   [Workday:Wells Fargo] No active board found (tried wd1–wd12)
+13:02:51  INFO      Total raw postings fetched: 4111
+13:02:51  INFO      After filtering and scoring: 89 qualifying jobs
+13:02:51  INFO      filter_new: 89 total → 0 new
+13:02:51  INFO      Upserted 89 jobs into database
+13:02:51  INFO      CSV saved: output/jobs_2026-07-07.csv  (89 jobs)
+13:02:52  INFO      Excel saved: output/jobs_2026-07-07.xlsx
+13:02:52  INFO      
+============================================================
+13:02:52  INFO      Run complete — 89 jobs exported
+13:02:52  INFO        New today:    0
+13:02:52  INFO        Total in DB:  90
+13:02:52  INFO      
+By role type:
+13:02:52  INFO        Data / Analytics: 57
+13:02:52  INFO        Operations Analytics: 15
+13:02:52  INFO        EA / Business Partner: 10
+13:02:52  INFO        Compliance / Risk / Fraud: 7
+13:02:52  INFO      
+By work type:
+13:02:52  INFO        Remote: 45
+13:02:52  INFO        In-Office / Hybrid: 32
+13:02:52  INFO        Contract: 12
+13:02:52  INFO      
+By sector:
+13:02:52  INFO        Compliance / Risk / Fraud: 57
+13:02:52  INFO        General: 16
+13:02:52  INFO        Government: 7
+13:02:52  INFO        Banking: 6
+13:02:52  INFO        Healthcare: 3
+13:02:52  INFO      
+Files saved:
+13:02:52  INFO        output/jobs_2026-07-07.csv
+13:02:52  INFO        output/jobs_2026-07-07.xlsx
+13:02:52  INFO        output/jobs.db  (full history + tracker)
+13:02:52  INFO      
+Tip: Run  python main.py --top  to see your best unreviewed matches
+13:45:32  INFO      ============================================================
+13:45:32  INFO      Job Intelligence Platform — starting run
+13:45:32  INFO      ============================================================
+13:45:32  INFO      Fetching from 38 sources concurrently...
+13:45:33  INFO        Greenhouse:coinbase: 132 postings
+13:45:33  INFO        Greenhouse:robinhood: 127 postings
+13:45:33  INFO        Greenhouse:affirm: 177 postings
+13:45:33  INFO        Greenhouse:asana: 150 postings
+13:45:33  INFO        Greenhouse:instacart: 155 postings
+13:45:33  INFO        Greenhouse:airbnb: 214 postings
+13:45:33  INFO        Greenhouse:stripe: 493 postings
+13:45:33  INFO        Greenhouse:gitlab: 146 postings
+13:45:34  INFO        RemoteOK: 100 postings
+13:45:34  INFO        Greenhouse:elastic: 186 postings
+13:45:34  INFO        Greenhouse:okta: 355 postings
+13:45:34  WARNING   [Greenhouse:hims] Not found — check token
+13:45:34  INFO        Greenhouse:cloudflare: 241 postings
+13:45:34  INFO        Greenhouse:datadog: 420 postings
+13:45:35  WARNING   [Greenhouse:ro_health] Not found — check token
+13:45:35  WARNING   [Lever:carta] Not found — check token
+13:45:35  WARNING   [Lever:checkr] Not found — check token
+13:45:36  INFO        Ashby:perplexity: 78 postings
+13:45:36  WARNING   [Ashby:anduril] Not found — check token
+13:45:36  WARNING   [Lever:benchling] Not found — check token
+13:45:36  WARNING   [Lever:samsara] Not found — check token
+13:45:36  WARNING   [Lever:gusto] Not found — check token
+13:45:36  INFO        Lever:palantir: 275 postings
+13:45:36  INFO        Ashby:openai: 712 postings
+13:45:37  INFO        Ashby:ramp: 122 postings
+13:45:37  WARNING   [Ashby:brex] Not found — check token
+13:45:38  INFO      [Workday:Truist] Found 1 postings (wd1)
+13:45:38  INFO        Workday:Truist: 1 postings
+13:45:40  INFO        Remotive: 28 postings
+13:45:41  WARNING   [Workday:Wells Fargo] No active board found (tried wd1–wd12)
+13:45:41  WARNING   [Workday:Novant Health] No active board found (tried wd1–wd12)
+13:45:41  WARNING   [Workday:Aetna] No active board found (tried wd1–wd12)
+13:45:41  WARNING   [Workday:Bank of America] No active board found (tried wd1–wd12)
+13:45:41  WARNING   [Workday:Humana] No active board found (tried wd1–wd12)
+13:45:43  WARNING   [Workday:Atrium Health] No active board found (tried wd1–wd12)
+13:45:43  INFO      Total raw postings fetched: 4112
+13:45:43  INFO      After filtering and scoring: 89 qualifying jobs
+13:45:43  INFO      filter_new: 89 total → 0 new
+13:45:43  INFO      Upserted 89 jobs into database
+13:45:43  INFO      CSV saved: output/jobs_2026-07-07.csv  (89 jobs)
+13:45:43  INFO      Excel saved: output/jobs_2026-07-07.xlsx
+13:45:43  INFO      
+============================================================
+13:45:43  INFO      Run complete — 89 jobs exported
+13:45:43  INFO        New today:    0
+13:45:43  INFO        Total in DB:  90
+13:45:43  INFO      
+By role type:
+13:45:43  INFO        Data / Analytics: 57
+13:45:43  INFO        Operations Analytics: 15
+13:45:43  INFO        EA / Business Partner: 10
+13:45:43  INFO        Compliance / Risk / Fraud: 7
+13:45:43  INFO      
+By work type:
+13:45:43  INFO        Remote: 45
+13:45:43  INFO        In-Office / Hybrid: 32
+13:45:43  INFO        Contract: 12
+13:45:43  INFO      
+By sector:
+13:45:43  INFO        Compliance / Risk / Fraud: 57
+13:45:43  INFO        General: 16
+13:45:43  INFO        Government: 7
+13:45:43  INFO        Banking: 6
+13:45:43  INFO        Healthcare: 3
+13:45:43  INFO      
+Files saved:
+13:45:43  INFO        output/jobs_2026-07-07.csv
+13:45:43  INFO        output/jobs_2026-07-07.xlsx
+13:45:43  INFO        output/jobs.db  (full history + tracker)
+13:45:43  INFO      
+Tip: Run  python main.py --top  to see your best unreviewed matches
