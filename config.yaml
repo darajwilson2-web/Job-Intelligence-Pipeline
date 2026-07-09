@@ -7,75 +7,134 @@
 # YOUR LOCATION
 # ------------------------------------
 your_city: "Charlotte, NC"
-max_office_miles: 20          # Max commute for in-office roles
+max_office_miles: 20
 include_remote: true
 include_contract: true
 
 # ------------------------------------
-# TARGET ROLES (title must contain one of these — case insensitive)
+# TARGET ROLES — expanded July 9, 2026
+# Title must contain one of these (case insensitive)
 # ------------------------------------
 title_filters:
-  # Primary: Compliance / Risk / Fraud
+  # ── PRIMARY: Fraud / Financial Crimes ─────────────────────
   - "fraud analyst"
   - "fraud detection"
-  - "compliance analyst"
+  - "fraud prevention"
+  - "fraud investigation"
+  - "fraud operations"
+  - "fraud operations analyst"
+  - "financial crimes"
+  - "financial crimes analyst"
+  - "financial crime"
+  - "fincrime"
+  - "aml analyst"
+  - "anti-money laundering"
+  - "sanctions analyst"
+  - "sanctions screening"
+  - "bsa analyst"
+  - "bsa/aml"
+  - "kyc analyst"
+  - "payments risk"
+  - "payment fraud"
+  - "transaction monitoring"
+
+  # ── PRIMARY: Risk / Compliance ─────────────────────────────
   - "risk analyst"
+  - "risk strategy"
+  - "risk strategy analyst"
+  - "risk strategist"
+  - "risk operations"
+  - "risk operations analyst"
+  - "compliance analyst"
+  - "compliance officer"
+  - "regulatory analyst"
   - "revenue integrity"
   - "audit analyst"
+  - "internal audit"
   - "risk and compliance"
-  # Secondary: Executive Assistant / Business Partner
+  - "credit risk"
+  - "operational risk"
+
+  # ── SECONDARY: Executive Assistant ────────────────────────
   - "executive assistant"
   - "executive business partner"
   - "chief of staff"
   - "associate chief of staff"
   - "administrative assistant"
   - "executive support"
-  # Data / Analytics
+
+  # ── SECONDARY: Data / Analytics ───────────────────────────
   - "data analyst"
   - "business analyst"
   - "reporting analyst"
   - "analytics"
   - "operations analyst"
   - "business operations analyst"
-  - "sales operations"
-  # Project / Program Coordinator
+  - "fraud analytics"
+
+  # ── SECONDARY: Project / Coordinator ──────────────────────
   - "project coordinator"
   - "program coordinator"
   - "operations coordinator"
-  - "project management analyst"
 
 # ------------------------------------
 # KEYWORD SCORING WEIGHTS
 # Higher = more important to you
 # ------------------------------------
 keywords:
-  # Fraud / Compliance / Risk — PRIMARY PATH
-  fraud analyst: 4
-  fraud detection: 4
-  fraud investigation: 4
-  fraud prevention: 4
-  risk analyst: 4
+  # ── Fraud / Financial Crimes — weighted highest ────────────
+  fraud analyst: 5
+  fraud detection: 5
+  fraud prevention: 5
+  fraud investigation: 5
+  fraud operations: 5
+  financial crimes: 5
+  financial crime: 5
+  fincrime: 5
+  payments risk: 5
+  payment fraud: 5
+  transaction monitoring: 4
+  aml: 4
+  anti-money laundering: 4
+  bsa: 4
+  kyc: 4
+  sanctions: 4
+  sanctions screening: 4
+  pep screening: 4
+  negative news screening: 4
+  ofac: 4
+  watchlist: 3
+  false positive: 3
+  risk controls: 4
+  fraud risk: 5
+  risk strategist: 4
+  risk strategy: 4
+
+  # ── Compliance / Risk ─────────────────────────────────────
   compliance analyst: 4
+  risk analyst: 4
+  risk assessment: 3
+  risk management: 3
+  regulatory compliance: 3
   revenue integrity: 4
   anomaly detection: 3
   loss prevention: 3
-  risk assessment: 3
-  risk management: 3
   case management: 3
-  eligibility: 3
   hipaa: 3
-  sox: 2
-  aml: 2
-  kyc: 2
+  sox: 3
   audit: 2
   compliance: 2
   reconciliation: 2
-  investigation: 2
+  investigation: 3
   regulatory: 2
-  internal controls: 2
+  internal controls: 3
   data privacy: 2
+  eligibility: 2
+  credit risk: 3
+  operational risk: 3
+  internal audit: 3
 
-  # Executive Assistant — SECONDARY PATH
+  # ── Executive Assistant ───────────────────────────────────
   executive assistant: 3
   executive business partner: 3
   chief of staff: 3
@@ -83,13 +142,10 @@ keywords:
   calendar management: 2
   c-suite: 2
   asynchronous: 2
-  async: 2
   distributed team: 2
-  ai-first: 2
   remote-first: 2
-  handbook-first: 2
 
-  # Data / Analytics Tools
+  # ── Data / Analytics Tools ────────────────────────────────
   sql: 3
   python: 3
   power bi: 3
@@ -101,59 +157,45 @@ keywords:
   business analyst: 2
   operations analyst: 3
   tableau: 2
-  jira: 1
-  etl: 1
   data integrity: 2
   kpi: 1
   reporting: 1
-  forecasting: 1
+  etl: 1
+  fraud analytics: 4
 
-  # Project / Coordinator
-  project coordinator: 3
-  program coordinator: 3
-  project management: 2
-  deliverables: 1
-  milestones: 1
-  coordination: 1
-  workflow: 1
-  stakeholder: 1
-  cross-functional: 1
-  process improvement: 1
-
-  # Sector boosters
+  # ── Sector Boosters ───────────────────────────────────────
+  fintech: 3
+  financial services: 3
+  banking: 3
+  payments: 3
+  crypto: 2
   government: 3
   public sector: 3
-  county: 3
   medicaid: 3
-  federal: 2
-  medicare: 2
   healthcare: 2
-  health system: 2
-  health insurance: 2
   claims: 3
   hipaa compliance: 3
-  banking: 2
-  financial services: 2
-  fintech: 2
-  fraud: 3
   insurance: 2
+  fraud: 3
 
 # ------------------------------------
 # MINIMUM SCORE TO SHOW IN RESULTS
-# Raise to see fewer (more relevant) results
-# Lower to see more results
 # ------------------------------------
-min_score: 3
+min_score: 5
 
 # ------------------------------------
-# GREENHOUSE COMPANY BOARDS
-# Token = slug after boards.greenhouse.io/TOKEN
+# GREENHOUSE COMPANIES
 # ------------------------------------
 greenhouse_companies:
+  # Fintech / Payments — primary fraud/compliance targets
   - stripe
   - affirm
   - robinhood
   - coinbase
+  - chime
+  - braintree
+  - marqeta
+  # Tech / SaaS
   - airbnb
   - instacart
   - asana
@@ -164,13 +206,10 @@ greenhouse_companies:
   - datadog
   - hubspot
   - hims
-  - ro_health
-  # Add your own:
-  # - your-target-company
+  - ro
 
 # ------------------------------------
-# LEVER COMPANY BOARDS
-# Token = slug after jobs.lever.co/TOKEN
+# LEVER COMPANIES
 # ------------------------------------
 lever_companies:
   - netflix
@@ -180,12 +219,9 @@ lever_companies:
   - samsara
   - gusto
   - benchling
-  # Add your own:
-  # - your-target-company
 
 # ------------------------------------
-# ASHBY COMPANY BOARDS
-# Token = slug after jobs.ashbyhq.com/TOKEN
+# ASHBY COMPANIES
 # ------------------------------------
 ashby_companies:
   - openai
@@ -194,20 +230,20 @@ ashby_companies:
   - ramp
   - brex
   - deel
-  # Add your own:
-  # - your-target-company
+  - mercury
+  - rippling
 
 # ------------------------------------
 # WORKDAY COMPANIES
-# Format: [Company Name, subdomain, careers-path]
 # ------------------------------------
 workday_companies:
-  - ["Atrium Health",   "atriumhealth", "Careers"]
-  - ["Novant Health",   "novanthealth",       "Careers"]
-  - ["Humana",          "humana",       "Careers"]
-  - ["Aetna",           "cvshealth",        "Careers"]
-  - ["Wells Fargo",     "wellsfargo",   "Careers"]
-  - ["Bank of America", "bankofamerica","Careers"]
-  - ["Truist",          "truist",       "Careers"]
-  # Add your own:
-  # - ["Company Name", "subdomain", "Careers"]
+  - ["Atrium Health",   "atriumhealth",  "Careers"]
+  - ["Novant Health",   "novant",        "Careers"]
+  - ["Humana",          "humana",        "Careers"]
+  - ["Aetna",           "aetna",         "Careers"]
+  - ["Wells Fargo",     "wellsfargo",    "Careers"]
+  - ["Bank of America", "bankofamerica", "Careers"]
+  - ["Truist",          "truist",        "Careers"]
+  - ["JPMorgan Chase",  "jpmorgan",      "Careers"]
+  - ["Fidelity",        "fidelity",      "Careers"]
+  - ["Capital One",     "capitalone",    "Careers"]
