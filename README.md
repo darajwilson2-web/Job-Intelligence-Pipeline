@@ -4,11 +4,31 @@
 
 <br><br>
 
+![Python](https://img.shields.io/badge/Python-3.12-1A365D?style=flat-square&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-3-0D9488?style=flat-square&logo=sqlite&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-1A365D?style=flat-square&logo=streamlit&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Analytics-0D9488?style=flat-square&logo=powerbi&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-69%20Tests-1A365D?style=flat-square&logo=pytest&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-0D9488?style=flat-square)
+![GitHub](https://img.shields.io/badge/GitHub-Deployed-1A365D?style=flat-square&logo=github&logoColor=white)
+
+<br>
+
 ![Tests](https://img.shields.io/badge/Tests-69%20Passing-0D9488?style=flat-square)
 ![ATS Score](https://img.shields.io/badge/ATS%20Score-100%25-1A365D?style=flat-square)
 ![Sources](https://img.shields.io/badge/Job%20Sources-30%2B-0D9488?style=flat-square)
 ![Platforms](https://img.shields.io/badge/ATS%20Platforms-4-1A365D?style=flat-square)
 ![Schedule](https://img.shields.io/badge/Auto%20Run-7%20AM%20Daily-0D9488?style=flat-square)
+
+</div>
+
+---
+
+<div align="center">
+
+| 🏢 30+ | 🔌 4 | ⏰ 7 AM | 🎯 100% | 📊 500+ |
+|:---:|:---:|:---:|:---:|:---:|
+| Companies Monitored | ATS Platforms | Daily Auto-Run | Automatic Scoring | Jobs Processed |
 
 </div>
 
@@ -271,6 +291,40 @@ python -m pytest tests/test_filters.py -v
 # Run scoring tests only
 python -m pytest tests/test_scoring.py -v
 ```
+
+---
+
+## 🔧 Engineering Challenges
+
+Real problems encountered and solved — the kind of questions that come up in technical interviews.
+
+**1. Different ATS API response structures**
+Each platform returns data differently. Greenhouse nests location inside `{"location": {"name": "..."}}`. Lever uses `categories.location`. Ashby uses a flat `location` field. Workday requires a POST request with a JSON body, not a GET. Solution: separate fetcher files per platform — changing one never breaks the others.
+
+**2. The "australia" matching "us" location bug**
+Simple substring matching caused `"australia".contains("us")` to return `True`, flooding results with international jobs. Fix: word-boundary regex for short tokens so `"us"` only matches as a standalone word. Same fix for `", ca"` matching inside `"canada"`. 44 unit tests in `test_filters.py` now catch this class of bug automatically.
+
+**3. SQLite schema migration without data loss**
+Early runs created `jobs.db` without a `description` column. Later additions needed it. Deleting the database would erase applied/favorite/notes data. Solution: `ensure_schema()` runs on every startup, checks `PRAGMA table_info(jobs)`, and adds only missing columns — zero data loss, fully backward compatible.
+
+**4. Concurrent fetching with graceful failure handling**
+Sequential fetching across 30+ sources took 3+ minutes. `ThreadPoolExecutor` reduced this to under 30 seconds. Challenge: one failed API call shouldn't crash the entire run. Each future is wrapped in try/except inside `as_completed()` — a 403 from a private board logs a warning and continues, the rest of the results save normally.
+
+**5. Streamlit live SQLite sync**
+Streamlit re-renders the entire page on any state change. Updating a checkbox needed to detect the change, write to SQLite, then re-render with the new database value — not Streamlit's stale widget state. Solution: compare widget value against database value on each render, write to SQLite if different, then call `st.rerun()`.
+
+**6. HTML stripping from ATS job descriptions**
+Greenhouse and Lever return descriptions as raw HTML with nested tags and encoded entities (`&amp;`, `&lt;`). Solution: `clean_description()` runs `html.unescape()` first, then strips all tags with `re.sub(r"<[^>]+>", " ", text)`, then collapses whitespace — clean readable text on every job card.
+
+---
+
+## 🗺 Future Enhancements
+
+- [ ] Streamlit Community Cloud deployment — public URL for portfolio sharing
+- [ ] LLM-powered job summary extraction — one-sentence role summaries per posting
+- [ ] Resume auto-tailor — match resume bullets against specific job descriptions
+- [ ] Interview tracker — calendar integration for scheduled screens and follow-ups
+- [ ] Salary range detection — extract compensation data from job descriptions
 
 ---
 

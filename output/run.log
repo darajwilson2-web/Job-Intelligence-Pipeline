@@ -566,3 +566,85 @@ Files saved:
 17:26:32  INFO      
 Tip: Run  python main.py --top  to see your best unreviewed matches
 17:26:32  WARNING      Check that GMAIL_APP_PASSWORD is set as a Windows environment variable
+09:07:20  INFO      ============================================================
+09:07:20  INFO      Job Intelligence Platform — starting run
+09:07:20  INFO      ============================================================
+09:07:20  INFO      Fetching from 46 sources concurrently...
+09:07:22  INFO        Greenhouse:chime: 67 postings
+09:07:22  INFO        Greenhouse:coinbase: 133 postings
+09:07:22  WARNING   [Greenhouse:braintree] Not found — check token
+09:07:22  INFO        Greenhouse:marqeta: 36 postings
+09:07:22  INFO        Greenhouse:robinhood: 120 postings
+09:07:22  INFO        Greenhouse:affirm: 177 postings
+09:07:22  INFO        Greenhouse:stripe: 503 postings
+09:07:22  INFO        RemoteOK: 100 postings
+09:07:22  INFO        Greenhouse:airbnb: 211 postings
+09:07:23  INFO        Greenhouse:instacart: 152 postings
+09:07:23  INFO        Greenhouse:asana: 145 postings
+09:07:24  INFO        Greenhouse:gitlab: 146 postings
+09:07:24  INFO        Greenhouse:elastic: 193 postings
+09:07:24  WARNING   [Greenhouse:hims] Not found — check token
+09:07:24  INFO        Greenhouse:datadog: 419 postings
+09:07:24  INFO        Greenhouse:cloudflare: 239 postings
+09:07:24  WARNING   [Greenhouse:ro] Not found — check token
+09:07:25  WARNING   [Lever:carta] Not found — check token
+09:07:25  WARNING   [Lever:checkr] Not found — check token
+09:07:25  WARNING   [Lever:samsara] Not found — check token
+09:07:26  WARNING   [Lever:gusto] Not found — check token
+09:07:26  WARNING   [Lever:benchling] Not found — check token
+09:07:26  INFO        Lever:palantir: 270 postings
+09:07:26  INFO        Ashby:perplexity: 79 postings
+09:07:27  INFO        Ashby:openai: 714 postings
+09:07:27  WARNING   [Ashby:anduril] Not found — check token
+09:07:27  WARNING   [Ashby:brex] Not found — check token
+09:07:27  INFO        Ashby:ramp: 128 postings
+09:07:27  WARNING   [Ashby:rippling] Not found — check token
+09:07:29  INFO      [Workday:Truist] Found 1 postings (wd1)
+09:07:29  INFO        Workday:Truist: 1 postings
+09:07:32  INFO        Remotive: 27 postings
+09:07:33  WARNING   [Workday:Atrium Health] No active board found (tried wd1–wd12)
+09:07:34  WARNING   [Workday:Novant Health] No active board found (tried wd1–wd12)
+09:07:34  WARNING   [Workday:Wells Fargo] No active board found (tried wd1–wd12)
+09:07:34  WARNING   [Workday:Aetna] No active board found (tried wd1–wd12)
+09:07:34  WARNING   [Workday:Bank of America] No active board found (tried wd1–wd12)
+09:07:35  WARNING   [Workday:Humana] No active board found (tried wd1–wd12)
+09:07:35  WARNING   [Workday:JPMorgan Chase] No active board found (tried wd1–wd12)
+09:07:36  WARNING   [Workday:Fidelity] No active board found (tried wd1–wd12)
+09:07:38  WARNING   [Workday:Capital One] No active board found (tried wd1–wd12)
+09:07:38  INFO        Greenhouse:okta: 352 postings
+09:07:38  INFO      Total raw postings fetched: 4212
+09:07:39  INFO      After filtering and scoring: 117 qualifying jobs
+09:07:39  INFO      Upserted 117 jobs into database
+09:07:39  INFO      CSV saved: output/jobs_2026-07-09.csv  (117 jobs)
+09:07:52  INFO      Excel saved: output/jobs_2026-07-09.xlsx
+09:07:52  INFO      
+============================================================
+09:07:52  INFO      Run complete — 117 jobs exported
+09:07:52  INFO        New today:    31
+09:07:52  INFO        Total in DB:  124
+09:07:52  INFO      
+By role type:
+09:07:52  INFO        Data / Analytics: 60
+09:07:52  INFO        Other: 22
+09:07:52  INFO        Operations Analytics: 15
+09:07:52  INFO        EA / Business Partner: 12
+09:07:52  INFO        Compliance / Risk / Fraud: 8
+09:07:52  INFO      
+By work type:
+09:07:52  INFO        Remote: 59
+09:07:52  INFO        In-Office / Hybrid: 44
+09:07:52  INFO        Contract: 14
+09:07:52  INFO      
+By sector:
+09:07:52  INFO        Compliance / Risk / Fraud: 84
+09:07:52  INFO        General: 15
+09:07:52  INFO        Government: 9
+09:07:52  INFO        Banking: 7
+09:07:52  INFO        Healthcare: 2
+09:07:52  INFO      
+Files saved:
+09:07:52  INFO        output/jobs_2026-07-09.csv
+09:07:52  INFO        output/jobs_2026-07-09.xlsx
+09:07:52  INFO        output/jobs.db  (full history + tracker)
+09:07:52  INFO      
+Tip: Run  python main.py --top  to see your best unreviewed matches
