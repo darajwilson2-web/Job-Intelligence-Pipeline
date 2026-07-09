@@ -174,3 +174,59 @@ def contract_ok(title: str, description: str, include_contract: bool = True) -> 
         return True
     text = f"{title} {description}".lower()
     return not any(s in text for s in _CONTRACT_SIGNALS)
+
+
+# ---------------------------------------------------------------------------
+# CHARLOTTE-AREA CITIES (within 30 miles)
+# ---------------------------------------------------------------------------
+CHARLOTTE_AREA = {
+    # Charlotte itself
+    "charlotte", "charlotte, nc", "charlotte nc",
+    # Within 30 miles
+    "concord", "gastonia", "mooresville", "huntersville",
+    "matthews", "mint hill", "monroe", "belmont", "kannapolis",
+    "salisbury", "cornelius", "davidson", "pineville", "indian trail",
+    "stallings", "waxhaw", "harrisburg", "fort mill", "rock hill",
+    "lake wylie", "steele creek",
+    # State abbreviations that suggest NC/SC local
+    "charlotte, north carolina", "mecklenburg",
+    # Common office location formats
+    "uptown charlotte", "south end charlotte", "ballantyne",
+    "southpark", "university city", "fort mill, sc", "rock hill, sc",
+}
+
+def is_local_or_remote(location: str, work_type: str) -> bool:
+    """
+    For remote roles — always allow.
+    For hybrid/in-office roles — only allow if within 30 miles of Charlotte.
+    Contract roles follow same logic as hybrid.
+
+    This ensures you never see a hybrid role in San Francisco or New York
+    that you'd have to commute to.
+    """
+    # Remote roles — always include regardless of location
+    if work_type == "Remote":
+        return True
+
+    # Unknown work type — check location
+    if not work_type or work_type == "":
+        return True
+
+    # Hybrid or In-Office — must be local
+    loc = location.lower().strip()
+
+    # Empty location on a hybrid role — include (can't tell, give benefit of doubt)
+    if not loc:
+        return True
+
+    # Check if location matches Charlotte area
+    for city in CHARLOTTE_AREA:
+        if city in loc:
+            return True
+
+    # Generic remote indicators — include even if hybrid listed
+    if any(word in loc for word in ["remote", "anywhere", "virtual", "nationwide"]):
+        return True
+
+    # Has a US state/city but not Charlotte area — exclude for hybrid roles
+    return False

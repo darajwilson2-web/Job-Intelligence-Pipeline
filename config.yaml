@@ -7,9 +7,15 @@
 # YOUR LOCATION
 # ------------------------------------
 your_city: "Charlotte, NC"
-max_office_miles: 20
-include_remote: true
+max_office_miles: 30        # Only show hybrid/in-office within 30 miles of Charlotte
+include_remote: true        # Always include fully remote roles regardless of location
 include_contract: true
+
+# Location filtering rules:
+# - Remote roles: always included regardless of location
+# - Hybrid / In-Office roles: only included if within max_office_miles of your_city
+# - Cities within 30 miles of Charlotte: Concord, Gastonia, Mooresville,
+#   Huntersville, Matthews, Mint Hill, Monroe, Belmont, Kannapolis, Salisbury
 
 # ------------------------------------
 # TARGET ROLES — expanded July 9, 2026

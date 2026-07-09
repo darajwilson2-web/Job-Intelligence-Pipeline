@@ -27,7 +27,7 @@ from pathlib import Path
 
 from models import Job
 from database import JobDatabase
-from filters import is_us_location, title_matches, contract_ok
+from filters import is_us_location, title_matches, contract_ok, is_local_or_remote
 from scoring import score_job, detect_role_type, detect_work_type, detect_sector
 from exporters import export_csv, export_excel
 from ats.greenhouse import fetch_greenhouse_jobs
@@ -147,6 +147,11 @@ def process_jobs(raw_jobs: list, cfg: dict) -> list[Job]:
         if not is_us_location(loc, title, desc):
             continue
         if not contract_ok(title, desc, include_contract):
+            continue
+
+        # For hybrid/in-office roles — only include if within 30 miles of Charlotte
+        work_type_check = detect_work_type(title, desc, loc)
+        if not is_local_or_remote(loc, work_type_check):
             continue
 
         # Score
