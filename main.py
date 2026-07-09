@@ -39,13 +39,17 @@ from ats.common import fetch_remoteok, fetch_remotive, fetch_weworkremotely
 # ---------------------------------------------------------------------------
 # LOGGING
 # ---------------------------------------------------------------------------
+# Force UTF-8 on Windows to handle emoji in log messages
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s  %(levelname)-8s  %(message)s",
     datefmt="%H:%M:%S",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("output/run.log", mode="a"),
+        logging.FileHandler("output/run.log", mode="a", encoding="utf-8"),
     ],
 )
 logger = logging.getLogger(__name__)

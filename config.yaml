@@ -193,7 +193,6 @@ greenhouse_companies:
   - robinhood
   - coinbase
   - chime
-  - braintree
   - marqeta
   # Tech / SaaS
   - airbnb
@@ -205,8 +204,6 @@ greenhouse_companies:
   - cloudflare
   - datadog
   - hubspot
-  - hims
-  - ro
 
 # ------------------------------------
 # LEVER COMPANIES
@@ -214,11 +211,6 @@ greenhouse_companies:
 lever_companies:
   - netflix
   - palantir
-  - carta
-  - checkr
-  - samsara
-  - gusto
-  - benchling
 
 # ------------------------------------
 # ASHBY COMPANIES
@@ -226,24 +218,15 @@ lever_companies:
 ashby_companies:
   - openai
   - perplexity
-  - anduril
   - ramp
-  - brex
   - deel
   - mercury
-  - rippling
 
 # ------------------------------------
 # WORKDAY COMPANIES
 # ------------------------------------
 workday_companies:
-  - ["Atrium Health",   "atriumhealth",  "Careers"]
-  - ["Novant Health",   "novant",        "Careers"]
-  - ["Humana",          "humana",        "Careers"]
-  - ["Aetna",           "aetna",         "Careers"]
-  - ["Wells Fargo",     "wellsfargo",    "Careers"]
-  - ["Bank of America", "bankofamerica", "Careers"]
   - ["Truist",          "truist",        "Careers"]
-  - ["JPMorgan Chase",  "jpmorgan",      "Careers"]
-  - ["Fidelity",        "fidelity",      "Careers"]
-  - ["Capital One",     "capitalone",    "Careers"]
+  # Note: Most large banks use custom portals, not Workday API
+  # Add verified Workday tokens below as discovered:
+  # - ["Company Name", "subdomain", "Careers"]
