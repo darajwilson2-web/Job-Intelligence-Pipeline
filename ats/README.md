@@ -17,10 +17,17 @@
 <h2 align="center">📸 Screenshots</h2>
 
 ### Streamlit Dashboard
+<!-- Replace with your actual screenshot -->
 ![Streamlit Dashboard](docs/images/dashboard_screenshot.png)
 > *Browse, filter, and track applications with live SQLite sync*
 
+### Power BI Analytics
+<!-- Replace with your actual screenshot -->
+![Power BI Dashboard](docs/images/powerbi_screenshot.png)
+> *Star-schema model with Fact_Jobs and Dim_ATS_Metrics tables*
+
 ### Daily Email Digest
+<!-- Replace with your actual screenshot -->
 ![Email Digest](docs/images/email_screenshot.png)
 > *Color-coded job cards with Apply buttons delivered every morning*
 

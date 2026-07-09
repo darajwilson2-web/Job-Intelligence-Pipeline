@@ -1,0 +1,22 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 200">
+<rect x="0" y="0" width="680" height="200" rx="12" fill="#1A365D"/>
+<rect x="0" y="172" width="680" height="28" rx="0" fill="#0D9488"/>
+<rect x="0" y="160" width="680" height="40" rx="0" fill="#0D9488" opacity="0.85"/>
+<rect x="0" y="188" width="680" height="12" rx="0" fill="#0D9488" opacity="0.6"/>
+<text x="340" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="1">JOB INTELLIGENCE PIPELINE</text>
+<text x="340" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#9FE1CB" letter-spacing="2">AUTOMATED  ·  SCORED  ·  TRACKED  ·  DELIVERED</text>
+<line x1="100" y1="116" x2="580" y2="116" stroke="#0D9488" stroke-width="0.5" opacity="0.6"/>
+<text x="113" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">30+</text>
+<text x="113" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">job sources</text>
+<text x="227" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">4</text>
+<text x="227" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">ATS platforms</text>
+<text x="340" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">69</text>
+<text x="340" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">unit tests</text>
+<text x="453" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">100%</text>
+<text x="453" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">ATS keyword score</text>
+<text x="567" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">7AM</text>
+<text x="567" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">daily auto-run</text>
+<text x="340" y="184" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#E1F5EE">Python · SQLite · Streamlit · Power BI · Gmail SMTP · GitHub · pytest</text>
+</svg>

@@ -1,0 +1,86 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 520">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- Layer labels -->
+<text x="18" y="80" fill="#888780" font-family="Arial,sans-serif" font-size="10" transform="rotate(-90,18,80)">SOURCES</text>
+<text x="18" y="210" fill="#888780" font-family="Arial,sans-serif" font-size="10" transform="rotate(-90,18,210)">INGEST</text>
+<text x="18" y="320" fill="#888780" font-family="Arial,sans-serif" font-size="10" transform="rotate(-90,18,320)">STORE</text>
+<text x="18" y="440" fill="#888780" font-family="Arial,sans-serif" font-size="10" transform="rotate(-90,18,440)">OUTPUT</text>
+
+<!-- LAYER 1: Sources -->
+<rect x="40" y="30" width="108" height="44" rx="6" fill="#E1F5EE" stroke="#0D9488" stroke-width="0.5"/>
+<text x="94" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#085041">Greenhouse</text>
+<text x="94" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">66+ companies</text>
+
+<rect x="160" y="30" width="108" height="44" rx="6" fill="#E1F5EE" stroke="#0D9488" stroke-width="0.5"/>
+<text x="214" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#085041">Lever</text>
+<text x="214" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Netflix, Palantir...</text>
+
+<rect x="280" y="30" width="108" height="44" rx="6" fill="#E1F5EE" stroke="#0D9488" stroke-width="0.5"/>
+<text x="334" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#085041">Ashby</text>
+<text x="334" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">OpenAI, Ramp...</text>
+
+<rect x="400" y="30" width="108" height="44" rx="6" fill="#E1F5EE" stroke="#0D9488" stroke-width="0.5"/>
+<text x="454" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#085041">Workday</text>
+<text x="454" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Atrium, Novant...</text>
+
+<rect x="520" y="30" width="120" height="44" rx="6" fill="#E1F5EE" stroke="#0D9488" stroke-width="0.5"/>
+<text x="580" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#085041">Public Boards</text>
+<text x="580" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">RemoteOK, Remotive</text>
+
+<!-- Arrows sources to main.py -->
+<line x1="94" y1="74" x2="310" y2="140" stroke="#1D9E75" stroke-width="0.8" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+<line x1="214" y1="74" x2="330" y2="140" stroke="#1D9E75" stroke-width="0.8" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+<line x1="334" y1="74" x2="340" y2="140" stroke="#1D9E75" stroke-width="0.8" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+<line x1="454" y1="74" x2="360" y2="140" stroke="#1D9E75" stroke-width="0.8" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+<line x1="580" y1="74" x2="372" y2="140" stroke="#1D9E75" stroke-width="0.8" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+
+<!-- LAYER 2: main.py -->
+<rect x="200" y="140" width="280" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="340" y="162" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#26215C">main.py — Ingestion Engine</text>
+<text x="340" y="182" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#3C3489">ThreadPoolExecutor · filters · scoring · YAML config</text>
+
+<!-- Arrow main.py to jobs.db -->
+<line x1="340" y1="196" x2="340" y2="248" stroke="#534AB7" stroke-width="1.2" fill="none" marker-end="url(#arrow2)"/>
+
+<!-- LAYER 3: SQLite -->
+<rect x="200" y="248" width="280" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="340" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#26215C">output/jobs.db — SQLite</text>
+<text x="340" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#3C3489">Deduplication · lifecycle · applied · favorites · notes</text>
+
+<!-- Arrows to outputs -->
+<line x1="240" y1="304" x2="100" y2="370" stroke="#534AB7" stroke-width="0.8" fill="none" marker-end="url(#arrow2)" opacity="0.7"/>
+<line x1="300" y1="304" x2="234" y2="370" stroke="#534AB7" stroke-width="0.8" fill="none" marker-end="url(#arrow2)" opacity="0.7"/>
+<line x1="380" y1="304" x2="446" y2="370" stroke="#534AB7" stroke-width="0.8" fill="none" marker-end="url(#arrow2)" opacity="0.7"/>
+<line x1="440" y1="304" x2="580" y2="370" stroke="#534AB7" stroke-width="0.8" fill="none" marker-end="url(#arrow2)" opacity="0.7"/>
+
+<!-- LAYER 4: Outputs -->
+<rect x="40" y="370" width="118" height="56" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="99" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#412402">app.py</text>
+<text x="99" y="412" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#633806">Streamlit dashboard</text>
+
+<rect x="174" y="370" width="118" height="56" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="233" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#412402">mailer.py</text>
+<text x="233" y="412" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#633806">Gmail digest</text>
+
+<rect x="388" y="370" width="118" height="56" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="447" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#412402">exporters.py</text>
+<text x="447" y="412" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#633806">CSV + Excel</text>
+
+<rect x="522" y="370" width="118" height="56" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="581" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#412402">Power BI</text>
+<text x="581" y="412" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#633806">Star schema analytics</text>
+
+<!-- Task Scheduler annotation -->
+<rect x="40" y="460" width="600" height="32" rx="6" fill="none" stroke="#888780" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text x="340" y="480" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#5F5E5A">⏰  Windows Task Scheduler — 7:00 AM daily auto-run (main.py) + 7:05 AM dashboard (app.py)</text>
+</svg>
